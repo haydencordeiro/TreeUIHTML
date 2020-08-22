@@ -1,0 +1,120 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #e5e4d7;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: "Roboto", sans-serif;
+}
+
+.conatiner {
+  display: grid;
+  grid-template-rows: 4fr 1fr;
+  grid-template-columns: 1.5fr 5fr;
+  grid-template-areas:
+    "nav aside"
+    "main main";
+  height: 80vh;
+  width: 80%;
+
+  border-radius: 2rem;
+  background-color: white;
+}
+
+nav {
+  grid-area: nav;
+  border-top-left-radius: 2rem;
+
+  /* background-color: red; */
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+
+  list-style: none;
+}
+.opts {
+  text-align: center;
+  padding: 1rem;
+  /* background-color: white;
+  border-radius: 1rem; */
+  color: green;
+}
+.opts li {
+  padding: 1rem;
+  border-radius: 0.2rem;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 255, 0, 0.19);
+  background-color: white;
+}
+
+aside {
+  margin-bottom: 1rem;
+  border-top-right-radius: 2rem;
+  grid-area: aside;
+  background-color: yellow;
+  /* background-image: url("https://media.com/photos/598dd880cb4a1b70eb61ac1e/16:9/w_2560%2Cc_limit/Entrance-Atrium-with-plant.jpg"); */
+  background-image: url("image.jpeg");
+  border-bottom-left-radius: 3rem;
+  background-size: cover;
+  background-repeat: no-repeat;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 255, 0, 0.19);
+  /* display: flex; */
+}
+.rightImage img {
+  object-fit: contain;
+}
+main {
+  border-bottom-right-radius: 2rem;
+  border-bottom-left-radius: 2rem;
+  background-color: white;
+  grid-area: main;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+}
+.namebar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  /* background-color: teal; */
+  padding-left: 1rem;
+  padding-right: 1rem;
+  /* font-weight: 400; */
+  font-weight: normal;
+}
+
+main h3 {
+  padding-left: 1rem;
+  color: teal;
+  padding-bottom: 2rem;
+}
+
+main h2 {
+  color: green;
+}
+.buttonContainer {
+  display: flex;
+  justify-content: space-between;
+}
+.buttonContainer a {
+  padding: 1.5rem;
+  width: 50%;
+  padding-left: 2.5rem;
+  text-decoration: none;
+  font-size: large;
+  color: grey;
+}
+#greenButton {
+  color: white;
+  font-size: large;
+
+  background-color: green;
+  border-top-right-radius: 2rem;
+  border-bottom-left-radius: 2rem;
+  text-decoration: none;
+}
